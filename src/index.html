@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>NoFixedAddress.ca</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="HeadAndNav">
+    <header>
+      <img src="./assets/NFA Header.png">
+    </header>
+
+    <nav>
+      <ul>
+        <li><button id="splashButton" onclick="showSplash()" disabled>
+            <p>About Us</p>
+          </button></li>
+        <li><button id="formButton" onclick="showForm()">
+            <p>Contact Us</p>
+            </button< /li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="body">
+    <main>
+      <div id="splash" class="bodyPage">
+        <p>It is hard to feel good about yourself, to recover from addictions, to find a job, or participate in society
+          if you do not have means to basic dignity. The starting line for the over 3,000 people experiencing housing
+          insecurity in Calgary can seem unfairly set back from the majority. The problem NFA strives to address is food
+          insecurity and how the simple things make the largest impact in repairing the lives of our most vulnerable
+          populations. Homelessness is hard to miss in a large city. What is more unfortunate is that due to the
+          indiscrete nature of food poverty this issue goes largely unaddressed by social agencies.<br>
+
+        <blockquote>“Social purpose businesses, whose reason for existing is to create a better world and not
+          shareholder profit,
+          are reconfiguring their businesses to be a force for good. The urgency of this moment in history necessitates
+          scaling and accelerating this fledgling business transition beyond today’s incremental growth.“</blockquote>
+        <br>
+        Propelling the Canadian Economy – A Framework for Action
+        </p>
+        <div class="media">
+          <iframe src="https://www.youtube.com/embed/00018sn-g5k?controls=0"> Error Loading Video
+          </iframe>
+          <iframe src="https://www.youtube.com/embed/u5MIP_s4tvo?controls=0"> Error Loading Video
+          </iframe>
+          <iframe src="https://www.youtube.com/embed/mrQuyNbt6cg?controls=0"> Error Loading Video
+          </iframe>
+          <iframe src="https://www.youtube.com/embed/g484YCWpXHE?controls=0"> Error Loading Video
+          </iframe>
+          <iframe src="https://www.youtube.com/embed/3rsrVuo0S44?controls=0"> Error Loading Video
+          </iframe>
+        </div>
+      </div>
+
+      <div id="form" class="bodyPage" style="display:none;">
+        <h2>Contact Us</h2>
+        <form>
+          <table>
+            <tr>
+              <td>Type of Inquiry:</td>
+              <td><select id="type">
+                  <option value="booking">Bookings</option>
+                  <option value="question">Questions</option>
+                  <option value="partnership">Partnerships</option>
+                  <option value="huggabowl">Huggabowls</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td>Full Name:</td>
+              <td><input id="name" placeholder="John Smith"></td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td><input type="email" id="email" placeholder="JSmith@email.com"></td>
+            </tr>
+            <tr>
+              <td>Phone Number:</td>
+              <td><input type="tel" id="phoneNumber" placeholder="403-111-2222"></td>
+            </tr>
+          </table>
+          <div class="message">
+            <h3>Message</h3>
+            <textarea id="message"> </textarea>
+            <br>
+            <input type="button" value="Submit" onclick="sendEmail()">
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <aside>
+      <div class="asideItems" hidden>
+        <h2>Upcoming Events</h2>
+        <div class="events">
+          <ul>
+            <li>
+              <div class="event">
+                Major Event <br>
+                October 26th <br>
+                Downtown
+              </div>
+            </li>
+            <li>
+              <div class="event">
+                Major Event <br>
+                October 26th <br>
+                Downtown
+              </div>
+            </li>
+            <li>
+              <div class="event">
+                Major Event <br>
+                October 26th <br>
+                Downtown
+              </div>
+            </li>
+            <li>
+              <div class="event">
+                Major Event <br>
+                October 26th <br>
+                Downtown
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="asideItems">
+        <h2>Our Socials</h2>
+        <div class="socials">
+
+          <a class="social link" href="https://twitter.com/TylerMelnyk"><img class="logo"
+              src="./assets/Twitter Logo.png"></a>
+          <p class="socialHandle">@TylerMelnyk</p>
+          <a class="social link" href="https://www.instagram.com/nofixedaddress_yyc/"><img class="logo"
+              src="./assets/Instagram Logo.png"></a>
+          <p class="socialHandle">nofixedaddress_yyc</p>
+          <a class="social link" href="tel:4039239874"><img class="logo" src="./assets/Phone Logo.png"></a>
+          <p class="socialHandle">(403) 923-9874</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+<script src="script.js"></script>
+
+</html>
