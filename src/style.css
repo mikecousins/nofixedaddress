@@ -1,0 +1,166 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(210,202,158);
+}
+
+.HeadAndNav {
+  width: 98%;
+  margin: auto;
+  /*border: 2px solid black;
+  border-radius: 5px;*/
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: grey;
+}
+
+header h1 {
+  text-align: center;
+  width: 80%;
+  font-size: 80px;
+}
+
+header img {
+  height: 80%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  top: 0;
+}
+
+nav button {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #e1e1e1;
+}
+
+nav button:hover {
+  background-color: #afafaf;
+}
+
+nav p {
+  margin: 5px;
+}
+
+main {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body{
+  display: flex;
+}
+
+.body aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  min-width: 200px;
+  max-width: 20%;
+  background-color: lightgrey;
+}
+
+.events ul, li {
+  margin: 5px;
+}
+
+aside h2 {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.socials {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  row-gap: 15px;
+  padding-bottom: 5%;
+}
+
+.logo {
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.socialHandle{
+  font-size: 1.6vw;
+  margin-left: 20px;
+}
+
+.bodyPage{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: 1.6vw;
+}
+
+.media{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event {
+  margin-left: -25%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.6vw;
+}
+
+iframe {
+  margin-top: 15px;
+  width: 480px;
+  height: 360px;
+}
+
+#message {
+  height: 150px;
+  width: 100%;
+  resize: none;
+}
+
+footer{
+  margin: auto;
+  margin-top: 30px;
+  padding: 5px;
+  align-self: bottom;
+}
+
